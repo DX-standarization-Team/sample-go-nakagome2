@@ -11,7 +11,8 @@ RUN apk update && \
 COPY ./go.mod go.sum ./
 RUN go mod download && go mod verify
 
-RUN github.com/DX-standarization-Team/go-basic-nakagome2
+# Install Compile Daemon for go. We'll use it to watch changes in go files
+RUN go get github.com/githubnemo/CompileDaemon
 
 # Copy and build the app
 COPY . .

@@ -1,4 +1,4 @@
-module github.com/DX-standarization-Team/go-basic-nakagome2
+module github.com/DX-standarization-Team/sample-go-nakagome2
 
 go 1.20
 
