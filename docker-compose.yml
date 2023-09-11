@@ -15,8 +15,11 @@ services:
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "secret"
       MYSQL_DATABASE: "sample_database"
-      MYSQL_USER: "test-user"
+      MYSQL_USER: "testuser"
       MYSQL_PASSWORD: "secret"
+      # OR if you want to use "root" as the user, just these two lines
+      # MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      # MYSQL_DATABASE: ${DATABASE_NAME}
     volumes:
       - "mysql_data:/var/lib/mysql"
     command: --default-authentication-plugin=mysql_native_password

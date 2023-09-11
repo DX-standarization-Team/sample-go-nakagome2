@@ -6,5 +6,5 @@ CREATE TABLE `users`
 );
 
 INSERT INTO `users` (`name`)
-VALUES ('田中 太郎'),
-       ('佐々木 花子');
+VALUES ('Taro Tanaka'),
+       ('Hanako Sasaki');
